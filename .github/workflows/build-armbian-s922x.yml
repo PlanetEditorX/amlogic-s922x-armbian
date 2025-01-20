@@ -103,9 +103,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Echo Tag
-        run: echo "build_tag=Armbian_${{ inputs.set_release }}_${{ inputs.armbian_storage }}_$(date +"%Y.%m.%d_%H.%M")"
-        
+
       - name: Initialization environment
         id: init
         env:
